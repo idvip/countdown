@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>countdown</title>
+    <style>
+    	/*自定义样式*/
+    	#gqs.countdown .countdown-num{
+    		color:red;
+    	}
+    	#gqs.countdown .countdown-lab{
+    		color:green;
+    	}
+    </style>
+    <script src="http://lib.sinaapp.com/js/jquery/1.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="countdown.js"></script>
+</head>
+<body>
+倒计时：
+<div id="djs">
+</div>
+<br/>
+已过去：
+<div id="gqs">
+</div>
+<script>
+    $("#djs").countDown(new Date('2020-10-15'));
+    $("#gqs").countDown(new Date('2017-09-04'),true);
+</script>
+</body>
+</html>
